@@ -9,13 +9,13 @@ $ echo 'eval "$(rbenv init -)"' >> ~/.profile
 $ source ~/.profile
 ```
 1. rubyをインストールします。  
-```sh
-$ rbenv install 1.9.3-p448
-```
+  ```sh
+  $ rbenv install 1.9.3-p448
+  ```
 1. rubyのバージョンの切り替え  
-```sh
-$ rbenv global 1.9.3-p448
-```
+  ```sh
+  $ rbenv global 1.9.3-p448
+  ```
 1. rubyのバージョンを確認  
 - 下記のように表示されれば、正常に切り替え終了です。
 ```sh

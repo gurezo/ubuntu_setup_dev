@@ -19,9 +19,9 @@
 1. rubyのバージョンを確認  
   ```sh
   $ ruby -v
-  ruby 1.9.3p448 (2013-06-27 revision 41675) [x86_64-darwin14.5.0]
-  上記のように表示されれば、正常に切り替え終了です。
+  ruby 1.9.3p448 (2013-06-27 revision 41675) [x86_64-darwin14.5.0]  
   ```
+  - 上記のように表示されれば、正常に切り替え終了です。
 1. bundler のインストールします。  
   ```sh
   $ rbenv exec gem install bundler

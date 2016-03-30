@@ -3,7 +3,7 @@
 ```sh
 $ brew install rbenv ruby-build
 ```
-1. rbenvの設定を.profileに書く  
+2. rbenvの設定を.profileに書く  
 ```sh
 $ echo 'eval "$(rbenv init -)"' >> ~/.profile
 $ source ~/.profile

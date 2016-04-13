@@ -6,6 +6,8 @@
 1. rbenvの設定を.profileに書く  
   ```
   $ echo 'eval "$(rbenv init -)"' >> ~/.profile
+  ```
+  ```
   $ source ~/.profile
   ```
 1. rubyをインストールします。  

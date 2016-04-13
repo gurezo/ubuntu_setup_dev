@@ -61,6 +61,9 @@
 1. 環境設定ファイルにnodebrew のパスを通す  
   ```
   $ echo "export PATH=$HOME/.nodebrew/current/bin:$PATH" >> ~/.profile
+  ```
+1. 設定を反映させる  
+  ```
   $ source ~/.profile
   ```
 1. nodebrewの確認  

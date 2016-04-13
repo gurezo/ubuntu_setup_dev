@@ -7,6 +7,7 @@
   ```
   $ echo 'eval "$(rbenv init -)"' >> ~/.profile
   ```
+1. 設定を反映させる  
   ```
   $ source ~/.profile
   ```

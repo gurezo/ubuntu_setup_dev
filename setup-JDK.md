@@ -1,8 +1,14 @@
 ### JDK setup
-1. リポジトリを更新します。  
+1. python を追加します。  
   ```
   sudo apt-get install python-software-properties
+  ```
+1. リポジトリを更新します。  
+  ```
   sudo add-apt-repository ppa:webupd8team/java
+  ```
+1. パッケージ全体を update します。  
+  ```
   sudo apt-get update -y
   ```
 1. JDK6の場合  

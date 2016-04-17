@@ -1,4 +1,4 @@
-# ubuntu OS Delelopment Setup Memo
+# ubuntu OS Development Setup Memo
 ## setup wiki contents
 - front end development
 - java development kit

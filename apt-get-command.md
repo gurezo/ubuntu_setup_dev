@@ -15,12 +15,12 @@
   ```
   $ sudo apt-get -y autoremove
   ```
-- 作業時のaptキャッシュを削除します。
+- 作業時のaptキャッシュを削除します。  
   ```
   $ sudo apt-get -y autoclean
   ```
   - キャッシュ(/var/cache/apt/archives)が肥大化することを防ぎます。
-- apt-get コマンド確認
+- apt-get コマンド確認  
   ```
   $ man apt-get
   ```

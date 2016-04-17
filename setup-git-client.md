@@ -1,9 +1,9 @@
 ### git クライアントセットアップ
 1. 前提条件
+- [JDKインストール](setup-JDK.md)
 ~~~~
 UbuntuにJavaが入っていない場合、起動できないのでJavaの導入がまだな人は同時にインストールするようにしてください。
 ~~~~
-  - [JDKインストール](setup-JDK.md)
 1. リポジトリを更新します。  
   ```
   $ sudo add-apt-repository ppa:eugenesan/ppa

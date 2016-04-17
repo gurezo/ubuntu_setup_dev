@@ -4,3 +4,4 @@
 - java development kit
 - android studio
 - text editor
+- terminal

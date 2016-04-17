@@ -1,27 +1,27 @@
 ### JDK setup
 1. python を追加します。  
   ```
-  sudo apt-get install python-software-properties
+  $ sudo apt-get install python-software-properties
   ```
 1. リポジトリを更新します。  
   ```
-  sudo add-apt-repository ppa:webupd8team/java
+  $ sudo add-apt-repository ppa:webupd8team/java
   ```
 1. パッケージ全体を update します。  
   ```
-  sudo apt-get update -y
+  $ sudo apt-get -y update
   ```
 1. JDK6の場合  
   ```
-  sudo apt-get install oracle-java6-installer
+  $ sudo apt-get -y install oracle-java6-installer
   ```
 1. JDK7の場合  
   ```
-  sudo apt-get install oracle-java7-installer
+  $ sudo apt-get -y install oracle-java7-installer
   ```
 1. JDK8の場合  
   ```
-  sudo apt-get install oracle-java8-installer
+  $ sudo apt-get -y install oracle-java8-installer
   ```
 
 ### 引用

@@ -1,6 +1,6 @@
 ### terminal guake setup
   ```
-  $ sudo apt-get install guake -y
+  $ sudo apt-get -y install guake
   ```
 
 ### 引用

@@ -12,12 +12,12 @@ UbuntuにJavaが入っていない場合、起動できないのでJavaの導入
   ```
 1. パッケージ全体を update します。  
   ```
-  $ sudo apt-get update -y
+  $ sudo apt-get -y update
   ```
 
 1. SmartGit をインストールします。  
   ```
-  $ sudo apt-get install smartgit -y
+  $ sudo apt-get -y install smartgit
   ```
 
 ### 引用

@@ -7,7 +7,6 @@ DISTRIB_RELEASE=15.10
 DISTRIB_CODENAME=wily
 DISTRIB_DESCRIPTION="Ubuntu 15.10"
 ~~~~
-
 ## setup wiki contents
 - front end development
 - java development kit

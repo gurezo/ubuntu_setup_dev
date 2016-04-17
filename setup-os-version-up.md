@@ -1,5 +1,4 @@
-# ubuntu OS Check Memo
-## relaese version
+### ubuntu OS Check Memo
 - アーキテクチャ（OSが32bit, 64bitどちらなのか）を調べるコマンド  
   ```
   uname -a

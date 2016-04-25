@@ -8,15 +8,15 @@
 ```
 $ vi ~/.android/adb_usb.ini
 ```
-- 下記の内容を追記する
-  ~~~~
-  # 例：Fx0, Open Web Board  
-  # 他のデバイスも同様に記述する事
-  # 1 USB VENDOR ID PER LINE.
-  0x2207
-  # 2 USB VENDOR ID PER LINE.
-  0x1004
-  ~~~~
+- 下記の内容を追記する  
+~~~~
+# 例：Fx0, Open Web Board  
+# 他のデバイスも同様に記述する事
+# 1 USB VENDOR ID PER LINE.
+0x2207
+# 2 USB VENDOR ID PER LINE.
+0x1004
+~~~~
 
 ### ルールを設定する
   ```

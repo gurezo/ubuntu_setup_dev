@@ -8,8 +8,8 @@ DISTRIB_CODENAME=wily
 DISTRIB_DESCRIPTION="Ubuntu 15.10"
 ~~~~
 ## setup wiki contents
+- adb
+- android studio
 - front end development
 - java development kit
-- android studio
-- text editor
 - terminal

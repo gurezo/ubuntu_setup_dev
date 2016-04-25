@@ -13,6 +13,31 @@
   $ ~/android-studio/bin$ ./studio.sh
   ```
 
+- Launcherに登録する起動ファイル作成  
+  ```
+  $ cd ~
+  $ cd android-studio
+  $ vi android.desktop
+  ```
+  - 下記内容を記述する
+
+  ~~~~
+  [Desktop Entry]
+  Type=Application
+  Encoding=UTF-8
+  Name=AndroidStudio
+  Comment=AndroidStudio
+  Exec=/home/ユーザー名/android-studio/bin/studio.sh
+  Icon=/home/ユーザー名/android-studio/bin/studio.png
+
+  Terminal=false
+  ~~~~
+  - 権限を変更する
+  ```
+  $ chmod 775 android.desktop
+  ```
+  - 作成したファイルをLauncherへドラック＆ドロップする
+
 ### 起動してもSDKが正常にインストール出来ない時
 - 依存性の問題の可能性があるので、下記手順を行う。  
   ```
@@ -21,3 +46,4 @@
 
 ### 引用
 - [Ubuntu にAndroid Studio をインストールする](http://qiita.com/TsutomuNakamura/items/ef4aeec32cdaaf9105cc)
+- [Linuxでアイコンを作成する方法](http://qiita.com/NoriakiOshita/items/303b57a5f82e779a4ec9)

@@ -10,6 +10,9 @@ DISTRIB_DESCRIPTION="Ubuntu 15.10"
 ## setup wiki contents
 - adb
 - android studio
+- apt-get command
 - front end development
+- git client
 - java development kit
+- os version up
 - terminal

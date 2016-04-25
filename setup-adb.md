@@ -1,5 +1,5 @@
 ### adb setup
-- android-tools-adbをインストールする
+- android-tools-adbをインストールする  
   ‘‘‘
   $ sudo apt-get install -y android-tools-adb
   ‘‘‘

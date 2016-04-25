@@ -2,6 +2,8 @@
 ## relaese version
 - making memo at os version
 ~~~~
+$ cat /etc/lsb-release
+
 DISTRIB_ID=Ubuntu
 DISTRIB_RELEASE=15.10
 DISTRIB_CODENAME=wily

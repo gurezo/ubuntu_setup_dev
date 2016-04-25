@@ -1,8 +1,8 @@
 ### adb setup
 - android-tools-adbをインストールする  
-  ‘‘‘
+  ```
   $ sudo apt-get install -y android-tools-adb
-  ‘‘‘
+  ```
 
 ### adb_usb.ini 編集する
 ```

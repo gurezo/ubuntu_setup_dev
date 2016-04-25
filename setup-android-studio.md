@@ -1,7 +1,7 @@
 ### android studio setup
 - サイトからのダウロード  
   [Android Studio と SDK Tools のダウンロード | Android Developers](http://developer.android.com/intl/ja/sdk/index.html)
-- [android-studio-ide-143.2739321-linux.zip](https://dl.google.com/dl/android/studio/ide-zips/2.0.0.20/android-studio-ide-143.2739321-linux.zip) 2016.04.25時点
+- [android-studio-ide-143.2739321-linux.zip](https://dl.google.com/dl/android/studio/ide-zips/2.0.0.20/android-studio-ide-143.2739321-linux.zip) 2016.04.25 22:11時点
 - 任意の場所に解凍する。  
   例：~/android-studio
 - 任意の場所へ移動する。

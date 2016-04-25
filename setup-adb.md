@@ -8,7 +8,6 @@
 ```
 $ vi ~/.android/adb_usb.ini
 ```
-
 - 下記の内容を追記する
   ~~~~
   # 例：Fx0, Open Web Board  

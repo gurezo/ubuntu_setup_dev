@@ -16,7 +16,8 @@
   $ uname -a 
   ```
   ~~~~
-  Linux computer name 4.2.0-35-generic #40-Ubuntu SMP Tue Mar 15 22:15:45 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+  # 以下のように表示されます
+  Linux コンピューター名 4.2.0-35-generic #40-Ubuntu SMP Tue Mar 15 22:15:45 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
   ~~~~
 - バージョン確認方法  
   ```

@@ -7,8 +7,12 @@ $ cat /etc/lsb-release
 DISTRIB_ID=Ubuntu
 DISTRIB_RELEASE=15.10
 DISTRIB_CODENAME=wily
-DISTRIB_DESCRIPTION="Ubuntu 15.10"
+DISTRIB_DESCRIPTION="Ubuntu 15.10
+
+$ arch
+X86_64
 ~~~~
+
 ## setup wiki contents
 - adb
 - android studio

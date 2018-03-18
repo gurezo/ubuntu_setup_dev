@@ -90,3 +90,28 @@
   ```
   $ npm install -g grunt-cli
   ```  
+
+### rbenv tips
+1. バージョン
+  ```
+  $ rbenv -v
+  $ rbenv --version
+  ```
+1. インストール可能なバージョンの一覧
+  ```
+  $ rbenv install -l
+  ```
+1. インストール
+  ```
+  $ rbenv install 2.1.5
+  ```
+1. アンインストール
+  ```
+  $ rbenv uninstall 2.1.5
+  ```
+
+### 引用
+- [rbenvのよく使うコマンドまとめ - TASK NOTES](http://www.task-notes.com/entry/20141204/1417662000)
+
+
+

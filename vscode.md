@@ -87,5 +87,8 @@
     "gitlens.advanced.messages": {
       "suppressShowKeyBindingsNotice": true
     },
-  }
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "vsicons.projectDetection.autoReload": true,
+}
 ```

@@ -1,14 +1,14 @@
 ### ショートカットの作り方
 
 #### desktop ファイルの作成(Android Studio の場合)
-- android-studio.desktop
+- AndroidStudio.desktop
     ```
     [Desktop Entry]
     Encoding=UTF-8
     Version=1.0
     Type=Application
     Name=Android Studio
-    Icon=/home/gurezo/android-studio/bin/androidstudio.ico
+    Icon=/home/gurezo/android-studio/bin/studio.png
     Path=/home/gurezo/android-studio/bin
     Exec=/home/gurezo/android-studio/bin/studio.sh
     ```
@@ -16,6 +16,9 @@
     ```
     $ chmod 773 android-studio.desktop
     ```
+
+cp ~/android-studio/AndroidStudio.desktop ~/.local/share/applications/
+
 
 ### 引用
 - [Ubuntuでショートカット（デスクトップエントリ）を作る](http://91stardust-atelier.hatenablog.com/entry/2016/11/17/015854)

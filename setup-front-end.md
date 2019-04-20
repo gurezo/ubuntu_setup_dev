@@ -13,11 +13,11 @@
   ```
 1. rubyをインストールします。  
   ```
-  $ rbenv install 1.9.3-p448
+  $ rbenv install 2.4.1
   ```
 1. rubyのバージョンの切り替え  
   ```
-  $ rbenv global 1.9.3-p448
+  $ rbenv global 2.4.1
   ```
 1. rubyのバージョンを確認  
   ```
@@ -25,7 +25,7 @@
   ```
   
   ```
-  ruby 1.9.3p448 (2013-06-27 revision 41675) [x86_64-darwin14.5.0]  
+ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
   ```
   - 上記のように表示されれば、正常に切り替え終了です。
 1. bundler のインストールします。  
@@ -33,63 +33,6 @@
   $ rbenv exec gem install bundler
   ```
 
-----
-
-### sass setup
-1. sass をインストールします。  
-  ```
-  $ gem install sass -v 3.4.10
-  ```
-
-
-
-----
-
-### compass setup
-1. compass をインストールします。  
-  ```
-  $ gem install compass -v 1.0.3
-  ```
-
-----
-
-### Node.js
-1. nodebrew をインストールします。  
-  ```
-  $ curl -L git.io/nodebrew | perl - setup
-  ```
-1. 環境設定ファイルにnodebrew のパスを通す  
-  ```
-  $ echo "export PATH=$HOME/.nodebrew/current/bin:$PATH" >> ~/.profile
-  ```
-1. 設定を反映させる  
-  ```
-  $ source ~/.profile
-  ```
-1. nodebrewの確認  
-  ```
-  $ nodebrew --version
-  ```
-1. nodebrew から Node.jsをインストールします。  
-  ```
-  $ nodebrew install-binary 0.10.21
-  ```
-1. Node.jsの使用するバージョンを指定する  
-  ```
-  $ nodebrew use 0.10.21
-  ```
-
-----
-
-### Grunt の準備
-1. npmを最新の状態にします。  
-  ```
-  $ npm update
-  ```
-2.	Grunt-cliをインストールします。   
-  ```
-  $ npm install -g grunt-cli
-  ```  
 
 ### rbenv tips
 1. バージョン
@@ -114,4 +57,38 @@
 - [rbenvのよく使うコマンドまとめ - TASK NOTES](http://www.task-notes.com/entry/20141204/1417662000)
 
 
+----
+
+### Node.js
+1. nodebrew をインストールします。  
+  ```
+  $ curl -L git.io/nodebrew | perl - setup
+  ```
+1. 環境設定ファイルにnodebrew のパスを通す  
+  ```
+  $ echo "export PATH=$HOME/.nodebrew/current/bin:$PATH" >> ~/.profile
+  ```
+1. 設定を反映させる  
+  ```
+  $ source ~/.profile
+  ```
+1. nodebrewの確認  
+  ```
+  $ nodebrew --version
+  ```
+1. nodebrewのインストールlist確認  
+  ```
+  $ odebrew ls-remote
+  ```
+1. nodebrew から Node.jsをインストールします。  
+  ```
+  $ nodebrew install-binary v10.15.3
+  ```
+1. Node.jsの使用するバージョンを指定する  
+  ```
+  $ nodebrew use v10.15.3
+  ```
+
+### 引用
+- [nodebrewでよく使うコマンド](https://qiita.com/suisuina/items/c5c4e4b9f55a8615a542)
 

@@ -1,4 +1,20 @@
-### JDK setup
+### Open JDK setup
+- OpenJDKのバージョンを検索
+```
+$ sudo apt search openjdk-\(\.\)\+-jdk$
+```
+- 任意のバージョンをインストールします。ここではjdk13を選択しています。
+```
+$ sudo apt install openjdk-13-jdk
+```
+
+sudo apt install openjdk-13-jdk
+
+### 引用
+- [OpenJDK（Java）を最新のUbuntuにインストール](https://qiita.com/terappy/items/537c069923144a9d9755)
+
+
+### JDK setup (Oracle)
 1. python を追加します。  
   ```
   $ sudo apt-get install python-software-properties

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Terminal=false
+Type=Application
+Name=Firefox Developer Edtion
+Icon=/home/gurezo/DeveloperEdition/browser/chrome/icons/default/default128.png
+Path=/home/gurezo/DeveloperEdition/
+Exec=/home/gurezo/DeveloperEdition/firefox

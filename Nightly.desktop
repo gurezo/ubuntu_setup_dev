@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Terminal=false
+Type=Application
+Name=Firefox Nightly
+Icon=/home/gurezo/Nightly/browser/chrome/icons/default/default128.png
+Path=/home/gurezo/Nightly/
+Exec=/home/gurezo/Nightly/firefox

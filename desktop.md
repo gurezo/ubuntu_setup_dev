@@ -12,13 +12,12 @@
     Path=/home/gurezo/android-studio/bin
     Exec=/home/gurezo/android-studio/bin/studio.sh
     ```
-- chmod
+- desktop file copy
     ```
-    $ chmod 773 android-studio.desktop
+    $ cp ~/android-studio/AndroidStudio.desktop ~/.local/share/applications/
+    $ cp ~/DeveloperEdition/DeveloperEdition.desktop ~/.local/share/applications/
+    $ cp ~/Nightly/Nightly.desktop ~/.local/share/applications/
     ```
-
-cp ~/android-studio/AndroidStudio.desktop ~/.local/share/applications/
-
 
 ### 引用
 - [Ubuntuでショートカット（デスクトップエントリ）を作る](http://91stardust-atelier.hatenablog.com/entry/2016/11/17/015854)

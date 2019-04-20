@@ -1,17 +1,26 @@
 ### ショートカットの作り方
 
 #### desktop ファイルの作成(Android Studio の場合)
+- android-studio.desktop
+    ```
+    [Desktop Entry]
+    Encoding=UTF-8
+    Version=1.0
+    Type=Application
+    Name=Android Studio
+    Icon=/home/gurezo/android-studio/bin/androidstudio.ico
+    Path=/home/gurezo/android-studio/bin
+    Exec=/home/gurezo/android-studio/bin/studio.sh
+    ```
+- chmod
+    ```
+    $ chmod 773 android-studio.desktop
+    ```
 
-```
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Type=Application
-Name=Android Studio
-Icon=/home/gurezo/android-studio/bin/androidstudio.ico
-Path=/home/gurezo/android-studio/bin
-Exec=/home/gurezo/android-studio/bin/studio.sh
-```
+### 引用
+- [Ubuntuでショートカット（デスクトップエントリ）を作る](http://91stardust-atelier.hatenablog.com/entry/2016/11/17/015854)
+
+---- 
 
 #### ファイルの設定を変更
 
@@ -27,4 +36,4 @@ desktop ファイルをランチャーへドラック＆ドロップ
 
 ### 引用
 
-* [うめの記録帳: Android Studio を Ubuntu のランチャーから起動できるように設定する](http://blog.ysakaguchi.net/2014/07/android-studio.html)
+- [うめの記録帳: Android Studio を Ubuntu のランチャーから起動できるように設定する](http://blog.ysakaguchi.net/2014/07/android-studio.html)

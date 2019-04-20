@@ -8,9 +8,9 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Name=Android Studio
-Icon=(Android Studioの絶対パス)/bin/androidstudio.ico
-Path=(Android Studioの絶対パス)/bin
-Exec=(Android Studioの絶対パス)/bin/studio.sh
+Icon=/home/gurezo/android-studio/bin/androidstudio.ico
+Path=/home/gurezo/android-studio/bin
+Exec=/home/gurezo/android-studio/bin/studio.sh
 ```
 
 #### ファイルの設定を変更

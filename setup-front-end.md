@@ -78,7 +78,7 @@ ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
   ```
 1. nodebrewのインストールlist確認  
   ```
-  $ odebrew ls-remote
+  $ nodebrew ls-remote
   ```
 1. nodebrew から Node.jsをインストールします。  
   ```
@@ -91,4 +91,3 @@ ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
 
 ### 引用
 - [nodebrewでよく使うコマンド](https://qiita.com/suisuina/items/c5c4e4b9f55a8615a542)
-

@@ -19,6 +19,35 @@
     $ cp ~/Nightly/Nightly.desktop ~/.local/share/applications/
     ```
 
+#### desktop ファイルの作成(Firefox Nightly の場合)
+- Nightly.desktop
+    ```
+    [Desktop Entry]
+    Encoding=UTF-8
+    Version=1.0
+    Terminal=false
+    Type=Application
+    Name=Firefox Nightly
+    Icon=/home/gurezo/Nightly/browser/chrome/icons/default/default128.png
+    Path=/home/gurezo/Nightly/
+    Exec=/home/gurezo/Nightly/firefox
+    ```
+
+#### desktop ファイルの作成(Firefox Developer Edtion の場合)
+- DeveloperEdition.desktop
+    ```
+    [Desktop Entry]
+    Encoding=UTF-8
+    Version=1.0
+    Terminal=false
+    Type=Application
+    Name=Firefox Developer Edtion
+    Icon=/home/gurezo/DeveloperEdition/browser/chrome/icons/default/default128.png
+    Path=/home/gurezo/DeveloperEdition/
+    Exec=/home/gurezo/DeveloperEdition/firefox
+    ```
+
+
 ### 引用
 - [Ubuntuでショートカット（デスクトップエントリ）を作る](http://91stardust-atelier.hatenablog.com/entry/2016/11/17/015854)
 

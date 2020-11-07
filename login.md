@@ -3,3 +3,6 @@
 
 ## ホスト名を設定する
 - [ホスト名を設定する](https://www.server-world.info/query?os=Ubuntu_20.04&p=hostname)
+
+
+

@@ -1,12 +1,5 @@
 ### setting.json
 ```
-// // Place your settings in this file to overwrite the default settings
-// {
-//     "editor.tabSize": "2",
-//     "editor.insertSpaces": true,
-//     "files.eol": "\n",
-//     "workbench.iconTheme": "material-icon-theme",
-// }
 {
     // ================
     // general settings
@@ -18,11 +11,12 @@
 
     "editor.acceptSuggestionOnCommitCharacter": true,
     "editor.cursorBlinking": "phase",
+    "editor.DefaultFormatter": "esbenp.prettier-vs-code",
     "editor.dragAndDrop": false,
     "editor.find.autoFindInSelection": true,
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
-    // "editor.lineNumbers": "interval",
+    "editor.lineNumbers": "on",
     "editor.minimap.maxColumn": 40,
     "editor.minimap.showSlider": "always",
     "editor.renderControlCharacters": true,

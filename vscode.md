@@ -55,14 +55,35 @@
         100,
       ],
     },
+    "[html]": {
+      "editor.tabSize": 2,
+      "editor.formatOnSace": true,
+      "editor.DefaultFormatter": "esbenp.prettier-vs-code",
+    },
+    "[css]": {
+      "editor.tabSize": 2,
+      "editor.formatOnSace": true,
+      "editor.DefaultFormatter": "esbenp.prettier-vs-code",
+    },
+    "[scss]": {
+      "editor.tabSize": 2,
+      "editor.formatOnSace": true,
+      "editor.DefaultFormatter": "esbenp.prettier-vs-code",
+    },
     "[javascript]": {
       "editor.tabSize": 2,
+      "editor.formatOnSace": true,
+      "editor.DefaultFormatter": "esbenp.prettier-vs-code",
     },
     "[javascriptreact]": {
       "editor.tabSize": 2,
+      "editor.formatOnSace": true,
+      "editor.DefaultFormatter": "esbenp.prettier-vs-code",
     },
     "[json]": {
       "editor.tabSize": 2,
+      "editor.formatOnSace": true,
+      "editor.DefaultFormatter": "esbenp.prettier-vs-code",
     },
     "[markdown]": {
       "editor.wordWrap": "off",
@@ -70,6 +91,8 @@
     },
     "[typescript]": {
       "editor.tabSize": 2,
+      "editor.formatOnSace": true,
+      "editor.DefaultFormatter": "esbenp.prettier-vs-code",
     },
     "[typescriptreact]": {
       "editor.tabSize": 2,
@@ -78,11 +101,18 @@
     // ===================
     // extensions settings
     // ===================
+    "typescript.extension.sortImports.maxNamedUmportsInSingleLine": 100,
+    "typescript.extension.sortImports.sortMethd": "path",
+    "typescript.extension.sortImports.pathSortOrder": [
+        "package",
+        "relativeUpLevel",
+        "relativeDownLevel",
+    ],
     "gitlens.advanced.messages": {
       "suppressShowKeyBindingsNotice": true
     },
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
-  "vsicons.projectDetection.autoReload": true,
+   "javascript.preferences.quoteStyle": "single",
+   "typescript.preferences.quoteStyle": "single",
+   "vsicons.projectDetection.autoReload": true,
 }
 ```

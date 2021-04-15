@@ -23,8 +23,8 @@
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "boundary",
     "editor.showFoldingControls": "always",
-    // "editor.smoothScrolling": true,
     "editor.insertSpaces": true,
+    "extensions.autoUpdate": false,
 
     "files.autoGuessEncoding": true,
     "files.defaultLanguage": "javascript",

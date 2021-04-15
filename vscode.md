@@ -111,8 +111,15 @@
     "gitlens.advanced.messages": {
       "suppressShowKeyBindingsNotice": true
     },
-   "javascript.preferences.quoteStyle": "single",
-   "typescript.preferences.quoteStyle": "single",
-   "vsicons.projectDetection.autoReload": true,
+   "brancketPairColorizer.consecutivePairColors": [
+     "()",
+     "[]",
+     "{}",
+     ["#c40", "#f69", "#39d", "#3b3", "#c6f", "#f0f"],
+     "red"
+   ], 
+   // "javascript.preferences.quoteStyle": "single",
+   // "typescript.preferences.quoteStyle": "single",
+   // "vsicons.projectDetection.autoReload": true,
 }
 ```

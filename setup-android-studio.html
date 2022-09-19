@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>android studio setup · GitBook</title>
+        <title>android studio setup · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="HonKit 4.0.0">
         
         
         
@@ -17,7 +16,7 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -66,7 +65,7 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
@@ -283,8 +282,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
         </a>
     </li>
 </ul>
@@ -324,46 +323,46 @@
                                 
                                 <h3 id="android-studio-setup">android studio setup</h3>
 <ul>
-<li>&#x30B5;&#x30A4;&#x30C8;&#x304B;&#x3089;&#x306E;&#x30C0;&#x30A6;&#x30ED;&#x30FC;&#x30C9;<br><a href="http://developer.android.com/intl/ja/sdk/index.html" target="_blank">Android Studio &#x3068; SDK Tools &#x306E;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9; | Android Developers</a></li>
-<li><a href="https://dl.google.com/dl/android/studio/ide-zips/2.0.0.20/android-studio-ide-143.2739321-linux.zip" target="_blank">android-studio-ide-143.2739321-linux.zip</a> 2016.04.25 22:11&#x6642;&#x70B9;</li>
-<li>&#x4EFB;&#x610F;&#x306E;&#x5834;&#x6240;&#x306B;&#x89E3;&#x51CD;&#x3059;&#x308B;&#x3002;<br>&#x4F8B;&#xFF1A;~/android-studio</li>
-<li>&#x4EFB;&#x610F;&#x306E;&#x5834;&#x6240;&#x3078;&#x79FB;&#x52D5;&#x3059;&#x308B;&#x3002;  <pre><code>$ cd android-studio/bin$
+<li>サイトからのダウロード<br><a href="http://developer.android.com/intl/ja/sdk/index.html" target="_blank">Android Studio と SDK Tools のダウンロード | Android Developers</a></li>
+<li><a href="https://dl.google.com/dl/android/studio/ide-zips/2.0.0.20/android-studio-ide-143.2739321-linux.zip" target="_blank">android-studio-ide-143.2739321-linux.zip</a> 2016.04.25 22:11時点</li>
+<li>任意の場所に解凍する。<br>例：~/android-studio</li>
+<li>任意の場所へ移動する。  <pre><code>$ cd android-studio/bin$
 </code></pre></li>
-<li><p>android-studio&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3002;  </p>
+<li><p>android-studioを起動する。  </p>
 <pre><code>$ ~/android-studio/bin$ ./studio.sh
 </code></pre></li>
-<li><p>Launcher&#x306B;&#x767B;&#x9332;&#x3059;&#x308B;&#x8D77;&#x52D5;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x4F5C;&#x6210;  </p>
+<li><p>Launcherに登録する起動ファイル作成  </p>
 <pre><code>$ cd ~
 $ cd android-studio
 $ vi android.desktop
 </code></pre><ul>
-<li>&#x4E0B;&#x8A18;&#x5185;&#x5BB9;&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;</li>
+<li>下記内容を記述する</li>
 </ul>
 <pre><code>[Desktop Entry]
 Type=Application
 Encoding=UTF-8
 Name=AndroidStudio
 Comment=AndroidStudio
-Exec=/home/&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;/android-studio/bin/studio.sh
-Icon=/home/&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;/android-studio/bin/studio.png
+Exec=/home/ユーザー名/android-studio/bin/studio.sh
+Icon=/home/ユーザー名/android-studio/bin/studio.png
 
 Terminal=false
 </code></pre><ul>
-<li>&#x6A29;&#x9650;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;<pre><code>$ chmod 775 android.desktop
+<li>権限を変更する<pre><code>$ chmod 775 android.desktop
 </code></pre></li>
-<li>&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;Launcher&#x3078;&#x30C9;&#x30E9;&#x30C3;&#x30AF;&#xFF06;&#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x3059;&#x308B;</li>
+<li>作成したファイルをLauncherへドラック＆ドロップする</li>
 </ul>
 </li>
 </ul>
-<h3 id="&#x8D77;&#x52D5;&#x3057;&#x3066;&#x3082;sdk&#x304C;&#x6B63;&#x5E38;&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x51FA;&#x6765;&#x306A;&#x3044;&#x6642;">&#x8D77;&#x52D5;&#x3057;&#x3066;&#x3082;SDK&#x304C;&#x6B63;&#x5E38;&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x51FA;&#x6765;&#x306A;&#x3044;&#x6642;</h3>
+<h3 id="起動してもsdkが正常にインストール出来ない時">起動してもSDKが正常にインストール出来ない時</h3>
 <ul>
-<li>&#x4F9D;&#x5B58;&#x6027;&#x306E;&#x554F;&#x984C;&#x306E;&#x53EF;&#x80FD;&#x6027;&#x304C;&#x3042;&#x308B;&#x306E;&#x3067;&#x3001;&#x4E0B;&#x8A18;&#x624B;&#x9806;&#x3092;&#x884C;&#x3046;&#x3002;  <pre><code>$ sudo apt-get install -y lib32stdc++6
+<li>依存性の問題の可能性があるので、下記手順を行う。  <pre><code>$ sudo apt-get install -y lib32stdc++6
 </code></pre></li>
 </ul>
-<h3 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h3>
+<h3 id="引用">引用</h3>
 <ul>
-<li><a href="http://qiita.com/TsutomuNakamura/items/ef4aeec32cdaaf9105cc" target="_blank">Ubuntu &#x306B;Android Studio &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;</a></li>
-<li><a href="http://qiita.com/NoriakiOshita/items/303b57a5f82e779a4ec9" target="_blank">Linux&#x3067;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x65B9;&#x6CD5;</a></li>
+<li><a href="http://qiita.com/TsutomuNakamura/items/ef4aeec32cdaaf9105cc" target="_blank">Ubuntu にAndroid Studio をインストールする</a></li>
+<li><a href="http://qiita.com/NoriakiOshita/items/303b57a5f82e779a4ec9" target="_blank">Linuxでアイコンを作成する方法</a></li>
 </ul>
 
                                 
@@ -408,12 +407,56 @@ Terminal=false
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"android studio setup","level":"1.1.9","depth":2,"next":{"title":"vscode","level":"1.1.10","depth":2,"path":"vscode.md","ref":"vscode.md","articles":[]},"previous":{"title":"「ターミナル」の日本語パスが文字化け対策","level":"1.1.8","depth":2,"path":"setup-bash-japanese-language.md","ref":"setup-bash-japanese-language.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-android-studio.md","mtime":"2021-01-16T16:23:23.866Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-20T12:38:23.976Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"android studio setup","level":"1.1.9","depth":2,"next":{"title":"vscode","level":"1.1.10","depth":2,"path":"vscode.md","ref":"vscode.md","articles":[]},"previous":{"title":"「ターミナル」の日本語パスが文字化け対策","level":"1.1.8","depth":2,"path":"setup-bash-japanese-language.md","ref":"setup-bash-japanese-language.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-android-studio.md","mtime":"2022-09-19T12:35:29.535Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2022-09-19T12:37:52.550Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -431,10 +474,6 @@ Terminal=false
     
         
         <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

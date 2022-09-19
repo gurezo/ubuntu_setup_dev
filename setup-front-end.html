@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>front end dev setup · GitBook</title>
+        <title>front end dev setup · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="HonKit 4.0.0">
         
         
         
@@ -17,7 +16,7 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -66,7 +65,7 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
@@ -283,8 +282,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
         </a>
     </li>
 </ul>
@@ -325,63 +324,63 @@
                                 <h2 id="front-end-dev-setup">front end dev setup</h2>
 <h3 id="ruby-setup">ruby setup</h3>
 <ol>
-<li>rbenv, ruby-build&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo apt-get -y install rbenv ruby-build
+<li>rbenv, ruby-buildをインストールします。  <pre><code>$ sudo apt-get -y install rbenv ruby-build
 </code></pre></li>
-<li>rbenv&#x306E;&#x8A2D;&#x5B9A;&#x3092;.profile&#x306B;&#x66F8;&#x304F;  <pre><code>$ echo &apos;eval &quot;$(rbenv init -)&quot;&apos; &gt;&gt; ~/.profile
+<li>rbenvの設定を.profileに書く  <pre><code>$ echo &apos;eval &quot;$(rbenv init -)&quot;&apos; &gt;&gt; ~/.profile
 </code></pre></li>
-<li>&#x8A2D;&#x5B9A;&#x3092;&#x53CD;&#x6620;&#x3055;&#x305B;&#x308B;  <pre><code>$ source ~/.profile
+<li>設定を反映させる  <pre><code>$ source ~/.profile
 </code></pre></li>
-<li>ruby&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ rbenv install 2.4.1
+<li>rubyをインストールします。  <pre><code>$ rbenv install 2.4.1
 </code></pre></li>
-<li>ruby&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x306E;&#x5207;&#x308A;&#x66FF;&#x3048;  <pre><code>$ rbenv global 2.4.1
+<li>rubyのバージョンの切り替え  <pre><code>$ rbenv global 2.4.1
 </code></pre></li>
-<li><p>ruby&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x78BA;&#x8A8D;  </p>
+<li><p>rubyのバージョンを確認  </p>
 <pre><code>$ ruby -v
 </code></pre><pre><code>ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
 </code></pre><ul>
-<li>&#x4E0A;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306B;&#x8868;&#x793A;&#x3055;&#x308C;&#x308C;&#x3070;&#x3001;&#x6B63;&#x5E38;&#x306B;&#x5207;&#x308A;&#x66FF;&#x3048;&#x7D42;&#x4E86;&#x3067;&#x3059;&#x3002;</li>
+<li>上記のように表示されれば、正常に切り替え終了です。</li>
 </ul>
 </li>
-<li>bundler &#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ rbenv exec gem install bundler
+<li>bundler のインストールします。  <pre><code>$ rbenv exec gem install bundler
 </code></pre></li>
 </ol>
 <h3 id="rbenv-tips">rbenv tips</h3>
 <ol>
-<li>&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;<pre><code>$ rbenv -v
+<li>バージョン<pre><code>$ rbenv -v
 $ rbenv --version
 </code></pre></li>
-<li>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x53EF;&#x80FD;&#x306A;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x306E;&#x4E00;&#x89A7;<pre><code>$ rbenv install -l
+<li>インストール可能なバージョンの一覧<pre><code>$ rbenv install -l
 </code></pre></li>
-<li>&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;<pre><code>$ rbenv install 2.1.5
+<li>インストール<pre><code>$ rbenv install 2.1.5
 </code></pre></li>
-<li>&#x30A2;&#x30F3;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;<pre><code>$ rbenv uninstall 2.1.5
+<li>アンインストール<pre><code>$ rbenv uninstall 2.1.5
 </code></pre></li>
 </ol>
-<h3 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h3>
+<h3 id="引用">引用</h3>
 <ul>
-<li><a href="http://www.task-notes.com/entry/20141204/1417662000" target="_blank">rbenv&#x306E;&#x3088;&#x304F;&#x4F7F;&#x3046;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x307E;&#x3068;&#x3081; - TASK NOTES</a></li>
+<li><a href="http://www.task-notes.com/entry/20141204/1417662000" target="_blank">rbenvのよく使うコマンドまとめ - TASK NOTES</a></li>
 </ul>
 <hr>
 <h3 id="nodejs">Node.js</h3>
 <ol>
-<li>nodebrew &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ curl -L git.io/nodebrew | perl - setup
+<li>nodebrew をインストールします。  <pre><code>$ curl -L git.io/nodebrew | perl - setup
 </code></pre></li>
-<li>&#x74B0;&#x5883;&#x8A2D;&#x5B9A;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306B;nodebrew &#x306E;&#x30D1;&#x30B9;&#x3092;&#x901A;&#x3059;  <pre><code>$ echo &quot;export PATH=$HOME/.nodebrew/current/bin:$PATH&quot; &gt;&gt; ~/.profile
+<li>環境設定ファイルにnodebrew のパスを通す  <pre><code>$ echo &quot;export PATH=$HOME/.nodebrew/current/bin:$PATH&quot; &gt;&gt; ~/.profile
 </code></pre></li>
-<li>&#x8A2D;&#x5B9A;&#x3092;&#x53CD;&#x6620;&#x3055;&#x305B;&#x308B;  <pre><code>$ source ~/.profile
+<li>設定を反映させる  <pre><code>$ source ~/.profile
 </code></pre></li>
-<li>nodebrew&#x306E;&#x78BA;&#x8A8D;  <pre><code>$ nodebrew --version
+<li>nodebrewの確認  <pre><code>$ nodebrew --version
 </code></pre></li>
-<li>nodebrew&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;list&#x78BA;&#x8A8D;  <pre><code>$ nodebrew ls-remote
+<li>nodebrewのインストールlist確認  <pre><code>$ nodebrew ls-remote
 </code></pre></li>
-<li>nodebrew &#x304B;&#x3089; Node.js&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ nodebrew install-binary v10.15.3
+<li>nodebrew から Node.jsをインストールします。  <pre><code>$ nodebrew install-binary v10.15.3
 </code></pre></li>
-<li>Node.js&#x306E;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;  <pre><code>$ nodebrew use v10.15.3
+<li>Node.jsの使用するバージョンを指定する  <pre><code>$ nodebrew use v10.15.3
 </code></pre></li>
 </ol>
-<h3 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h3>
+<h3 id="引用">引用</h3>
 <ul>
-<li><a href="https://qiita.com/suisuina/items/c5c4e4b9f55a8615a542" target="_blank">nodebrew&#x3067;&#x3088;&#x304F;&#x4F7F;&#x3046;&#x30B3;&#x30DE;&#x30F3;&#x30C9;</a></li>
+<li><a href="https://qiita.com/suisuina/items/c5c4e4b9f55a8615a542" target="_blank">nodebrewでよく使うコマンド</a></li>
 </ul>
 
                                 
@@ -426,12 +425,56 @@ $ rbenv --version
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"front end dev setup","level":"1.1.6","depth":2,"next":{"title":"terminal guake setup","level":"1.1.7","depth":2,"path":"setup-terminal.md","ref":"setup-terminal.md","articles":[]},"previous":{"title":"git セットアップ","level":"1.1.5","depth":2,"path":"setup-git-client.md","ref":"setup-git-client.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-front-end.md","mtime":"2021-01-16T16:23:23.867Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-20T12:38:23.976Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"front end dev setup","level":"1.1.6","depth":2,"next":{"title":"terminal guake setup","level":"1.1.7","depth":2,"path":"setup-terminal.md","ref":"setup-terminal.md","articles":[]},"previous":{"title":"git セットアップ","level":"1.1.5","depth":2,"path":"setup-git-client.md","ref":"setup-git-client.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-front-end.md","mtime":"2022-09-19T12:35:29.535Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2022-09-19T12:37:52.550Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -449,10 +492,6 @@ $ rbenv --version
     
         
         <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

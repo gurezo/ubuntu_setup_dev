@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>JDK setup · GitBook</title>
+        <title>JDK setup · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="HonKit 4.0.0">
         
         
         
@@ -17,7 +16,7 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -66,7 +65,7 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
@@ -283,8 +282,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
         </a>
     </li>
 </ul>
@@ -324,31 +323,31 @@
                                 
                                 <h3 id="open-jdk-setup">Open JDK setup</h3>
 <ul>
-<li>OpenJDK&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x691C;&#x7D22;<pre><code>$ sudo apt search openjdk-\(\.\)\+-jdk$
+<li>OpenJDKのバージョンを検索<pre><code>$ sudo apt search openjdk-\(\.\)\+-jdk$
 </code></pre></li>
-<li>&#x4EFB;&#x610F;&#x306E;&#x30D0;&#x30FC;&#x30B8;&#x30E7;&#x30F3;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x3053;&#x3067;&#x306F;jdk13&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<pre><code>$ sudo apt install openjdk-13-jdk
+<li>任意のバージョンをインストールします。ここではjdk13を選択しています。<pre><code>$ sudo apt install openjdk-13-jdk
 </code></pre></li>
 </ul>
-<h3 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h3>
+<h3 id="引用">引用</h3>
 <ul>
-<li><a href="https://qiita.com/terappy/items/537c069923144a9d9755" target="_blank">OpenJDK&#xFF08;Java&#xFF09;&#x3092;&#x6700;&#x65B0;&#x306E;Ubuntu&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</a></li>
+<li><a href="https://qiita.com/terappy/items/537c069923144a9d9755" target="_blank">OpenJDK（Java）を最新のUbuntuにインストール</a></li>
 </ul>
 <hr>
 <h3 id="jdk-setup-oracle">JDK setup (Oracle)</h3>
 <ol>
-<li>python &#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo apt-get install python-software-properties
+<li>python を追加します。  <pre><code>$ sudo apt-get install python-software-properties
 </code></pre></li>
-<li>&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo add-apt-repository ppa:webupd8team/java
+<li>リポジトリを更新します。  <pre><code>$ sudo add-apt-repository ppa:webupd8team/java
 </code></pre></li>
-<li>&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x5168;&#x4F53;&#x3092; update &#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo apt-get -y update
+<li>パッケージ全体を update します。  <pre><code>$ sudo apt-get -y update
 </code></pre></li>
-<li>JDK6&#x306E;&#x5834;&#x5408;  <pre><code>$ sudo apt-get -y install oracle-java6-installer
+<li>JDK6の場合  <pre><code>$ sudo apt-get -y install oracle-java6-installer
 </code></pre></li>
-<li>JDK7&#x306E;&#x5834;&#x5408;  <pre><code>$ sudo apt-get -y install oracle-java7-installer
+<li>JDK7の場合  <pre><code>$ sudo apt-get -y install oracle-java7-installer
 </code></pre></li>
-<li>JDK8&#x306E;&#x5834;&#x5408;  <pre><code>$ sudo apt-get -y install oracle-java8-installer
+<li>JDK8の場合  <pre><code>$ sudo apt-get -y install oracle-java8-installer
 </code></pre></li>
-<li>&#x4E0A;&#x8A18;&#x304C;&#x6B63;&#x5E38;&#x306B;&#x3067;&#x304D;&#x306A;&#x3044;&#x5834;&#x5408;<pre><code>$ sudo apt-get install openjdk-9 
+<li>上記が正常にできない場合<pre><code>$ sudo apt-get install openjdk-9 
 $ sudo apt-get install openjdk-9-jdk-headless
 $ sudo dpkg --configure -a
 $ sudo dpkg -i --force-overwrite &apos;/var/cache/apt/archives/openjdk-9-jdk_9~b181-0ubuntu1_amd64.deb&apos;
@@ -358,10 +357,10 @@ OpenJDK Runtime Environment (build 9-internal+0-2016-04-14-195246.buildd.src)
 OpenJDK 64-Bit Server VM (build 9-internal+0-2016-04-14-195246.buildd.src, mixed mode)
 </code></pre></li>
 </ol>
-<h3 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h3>
+<h3 id="引用">引用</h3>
 <ul>
-<li><a href="http://qiita.com/niusounds/items/1f32dcd6fa1f57ade98a" target="_blank">qiita Ubuntu&#x306B;Oracle JDK8&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</a></li>
-<li><a href="https://qiita.com/yamatok/items/ed90768419f151df1e68" target="_blank">&#x3082;&#x3046;Java9&#x306B;add-apt-repository&#x306F;&#x8981;&#x3089;&#x306A;&#x3044;</a></li>
+<li><a href="http://qiita.com/niusounds/items/1f32dcd6fa1f57ade98a" target="_blank">qiita UbuntuにOracle JDK8をインストール</a></li>
+<li><a href="https://qiita.com/yamatok/items/ed90768419f151df1e68" target="_blank">もうJava9にadd-apt-repositoryは要らない</a></li>
 </ul>
 
                                 
@@ -406,12 +405,56 @@ OpenJDK 64-Bit Server VM (build 9-internal+0-2016-04-14-195246.buildd.src, mixed
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"JDK setup","level":"1.1.3","depth":2,"next":{"title":"adb setup","level":"1.1.4","depth":2,"path":"setup-adb.md","ref":"setup-adb.md","articles":[]},"previous":{"title":"apt-get コマンド 一覧","level":"1.1.2","depth":2,"path":"apt-get-command.md","ref":"apt-get-command.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-JDK.md","mtime":"2021-01-16T16:23:23.866Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-20T12:38:23.976Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"JDK setup","level":"1.1.3","depth":2,"next":{"title":"adb setup","level":"1.1.4","depth":2,"path":"setup-adb.md","ref":"setup-adb.md","articles":[]},"previous":{"title":"apt-get コマンド 一覧","level":"1.1.2","depth":2,"path":"apt-get-command.md","ref":"apt-get-command.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-JDK.md","mtime":"2022-09-19T12:35:29.535Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2022-09-19T12:37:52.550Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -429,10 +472,6 @@ OpenJDK 64-Bit Server VM (build 9-internal+0-2016-04-14-195246.buildd.src, mixed
     
         
         <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

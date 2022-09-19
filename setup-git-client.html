@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>git セットアップ · GitBook</title>
+        <title>git セットアップ · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="HonKit 4.0.0">
         
         
         
@@ -17,7 +16,7 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -66,7 +65,7 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
@@ -283,8 +282,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
         </a>
     </li>
 </ul>
@@ -322,33 +321,33 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="git-&#x30BB;&#x30C3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;">git &#x30BB;&#x30C3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;</h3>
-<h4 id="git-&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">git &#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h4>
+                                <h3 id="git-セットアップ">git セットアップ</h3>
+<h4 id="git-インストール">git インストール</h4>
 <ol>
-<li>&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo apt-get -y install git
+<li>リポジトリを更新します。  <pre><code>$ sudo apt-get -y install git
 </code></pre></li>
 </ol>
 <hr>
-<h3 id="git-&#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x30BB;&#x30C3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;">git &#x30AF;&#x30E9;&#x30A4;&#x30A2;&#x30F3;&#x30C8;&#x30BB;&#x30C3;&#x30C8;&#x30A2;&#x30C3;&#x30D7;</h3>
-<h4 id="&#x524D;&#x63D0;&#x6761;&#x4EF6;">&#x524D;&#x63D0;&#x6761;&#x4EF6;</h4>
-<pre><code>Ubuntu&#x306B;Java&#x304C;&#x5165;&#x3063;&#x3066;&#x3044;&#x306A;&#x3044;&#x5834;&#x5408;&#x3001;&#x8D77;&#x52D5;&#x3067;&#x304D;&#x306A;&#x3044;&#x306E;&#x3067;Java&#x306E;&#x5C0E;&#x5165;&#x304C;&#x307E;&#x3060;&#x306A;&#x4EBA;&#x306F;&#x540C;&#x6642;&#x306B;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;
+<h3 id="git-クライアントセットアップ">git クライアントセットアップ</h3>
+<h4 id="前提条件">前提条件</h4>
+<pre><code>UbuntuにJavaが入っていない場合、起動できないのでJavaの導入がまだな人は同時にインストールするようにしてください。
 </code></pre><ul>
-<li><a href="setup-JDK.html">JDK&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</a></li>
+<li><a href="setup-JDK.html">JDKインストール</a></li>
 </ul>
-<h4 id="smartgit&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;">SmartGit&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;</h4>
+<h4 id="smartgitのインストール">SmartGitのインストール</h4>
 <ol>
-<li>&#x30EA;&#x30DD;&#x30B8;&#x30C8;&#x30EA;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo add-apt-repository ppa:eugenesan/ppa
+<li>リポジトリを更新します。  <pre><code>$ sudo add-apt-repository ppa:eugenesan/ppa
 </code></pre></li>
-<li><p>&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x5168;&#x4F53;&#x3092; update &#x3057;&#x307E;&#x3059;&#x3002;  </p>
+<li><p>パッケージ全体を update します。  </p>
 <pre><code>$ sudo apt-get -y update
 </code></pre></li>
-<li><p>SmartGit &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3057;&#x307E;&#x3059;&#x3002;  </p>
+<li><p>SmartGit をインストールします。  </p>
 <pre><code>$ sudo apt-get -y install smartgit
 </code></pre></li>
 </ol>
-<h3 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h3>
+<h3 id="引用">引用</h3>
 <ul>
-<li><a href="http://ry0.github.io/blog/2015/06/06/smart-git/" target="_blank">SmartGit&#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;&#x3068;&#x4F7F;&#x3044;&#x65B9;</a></li>
+<li><a href="http://ry0.github.io/blog/2015/06/06/smart-git/" target="_blank">SmartGitのインストールと使い方</a></li>
 </ul>
 
                                 
@@ -393,12 +392,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"git セットアップ","level":"1.1.5","depth":2,"next":{"title":"front end dev setup","level":"1.1.6","depth":2,"path":"setup-front-end.md","ref":"setup-front-end.md","articles":[]},"previous":{"title":"adb setup","level":"1.1.4","depth":2,"path":"setup-adb.md","ref":"setup-adb.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-git-client.md","mtime":"2021-01-16T16:23:23.867Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-20T12:38:23.976Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"git セットアップ","level":"1.1.5","depth":2,"next":{"title":"front end dev setup","level":"1.1.6","depth":2,"path":"setup-front-end.md","ref":"setup-front-end.md","articles":[]},"previous":{"title":"adb setup","level":"1.1.4","depth":2,"path":"setup-adb.md","ref":"setup-adb.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-git-client.md","mtime":"2022-09-19T12:35:29.535Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2022-09-19T12:37:52.550Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -416,10 +459,6 @@
     
         
         <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

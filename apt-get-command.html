@@ -3,11 +3,10 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>apt-get コマンド 一覧 · GitBook</title>
+        <title>apt-get コマンド 一覧 · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="generator" content="HonKit 4.0.0">
         
         
         
@@ -17,7 +16,7 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
@@ -66,7 +65,7 @@
     </head>
     <body>
         
-<div class="book">
+<div class="book honkit-cloak">
     <div class="book-summary">
         
             
@@ -283,8 +282,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
         </a>
     </li>
 </ul>
@@ -322,27 +321,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="apt-get-&#x30B3;&#x30DE;&#x30F3;&#x30C9;-&#x4E00;&#x89A7;">apt-get &#x30B3;&#x30DE;&#x30F3;&#x30C9; &#x4E00;&#x89A7;</h3>
+                                <h3 id="apt-get-コマンド-一覧">apt-get コマンド 一覧</h3>
 <ul>
-<li>&#x6700;&#x65B0;&#x306E;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo apt-get -y update
+<li>最新のアップデートを確認します。  <pre><code>$ sudo apt-get -y update
 </code></pre></li>
-<li>&#x78BA;&#x8A8D;&#x3057;&#x305F;&#x6700;&#x65B0;&#x306E;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x3092;&#x9069;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo apt-get -y upgrade
+<li>確認した最新のアップデートを適用します。  <pre><code>$ sudo apt-get -y upgrade
 </code></pre></li>
-<li>dist-upgrade&#x3067;&#x30C7;&#x30A3;&#x30B9;&#x30C8;&#x30EA;&#x30D3;&#x30E5;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x6700;&#x65B0;&#x306E;&#x3082;&#x306E;&#x306B;&#x9069;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo apt-get -y dist-upgrade
+<li>dist-upgradeでディストリビューションを最新のものに適用します。  <pre><code>$ sudo apt-get -y dist-upgrade
 </code></pre></li>
-<li>&#x4F9D;&#x5B58;&#x95A2;&#x4FC2;&#x89E3;&#x6C7A;&#x5F8C;&#x306B;&#x4F7F;&#x308F;&#x306A;&#x304F;&#x306A;&#x3063;&#x305F;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x524A;&#x9664;&#x3057;&#x307E;&#x3059;&#x3002;   <pre><code>$ sudo apt-get -y autoremove
+<li>依存関係解決後に使わなくなったパッケージを削除します。   <pre><code>$ sudo apt-get -y autoremove
 </code></pre></li>
-<li>&#x4F5C;&#x696D;&#x6642;&#x306E;apt&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;&#x3092;&#x524A;&#x9664;&#x3057;&#x307E;&#x3059;&#x3002;  <pre><code>$ sudo apt-get -y autoclean
+<li>作業時のaptキャッシュを削除します。  <pre><code>$ sudo apt-get -y autoclean
 </code></pre><ul>
-<li>&#x30AD;&#x30E3;&#x30C3;&#x30B7;&#x30E5;(/var/cache/apt/archives)&#x304C;&#x80A5;&#x5927;&#x5316;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x9632;&#x304E;&#x307E;&#x3059;&#x3002;</li>
+<li>キャッシュ(/var/cache/apt/archives)が肥大化することを防ぎます。</li>
 </ul>
 </li>
-<li>apt-get &#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x78BA;&#x8A8D;  <pre><code>$ man apt-get
+<li>apt-get コマンド確認  <pre><code>$ man apt-get
 </code></pre></li>
 </ul>
-<h3 id="&#x5F15;&#x7528;">&#x5F15;&#x7528;</h3>
+<h3 id="引用">引用</h3>
 <ul>
-<li><a href="http://do-you-linux.com/blog/2013/11/19/post-838/" target="_blank">Ubuntu&#x3092;&#x30A2;&#x30C3;&#x30D7;&#x30C7;&#x30FC;&#x30C8;&#x3059;&#x308B;(&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x7DE8;)&#x3010;LinuxOS&#x306E;&#x53D6;&#x308A;&#x6271;&#x3044;&#x8AAC;&#x660E;&#x3011;</a></li>
+<li><a href="http://do-you-linux.com/blog/2013/11/19/post-838/" target="_blank">Ubuntuをアップデートする(コマンド編)【LinuxOSの取り扱い説明】</a></li>
 </ul>
 
                                 
@@ -387,12 +386,56 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"apt-get コマンド 一覧","level":"1.1.2","depth":2,"next":{"title":"JDK setup","level":"1.1.3","depth":2,"path":"setup-JDK.md","ref":"setup-JDK.md","articles":[]},"previous":{"title":"OS Check Memo","level":"1.1.1","depth":2,"path":"setup-os-version-up.md","ref":"setup-os-version-up.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"apt-get-command.md","mtime":"2021-01-16T16:23:23.865Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-20T12:38:23.976Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"apt-get コマンド 一覧","level":"1.1.2","depth":2,"next":{"title":"JDK setup","level":"1.1.3","depth":2,"path":"setup-JDK.md","ref":"setup-JDK.md","articles":[]},"previous":{"title":"OS Check Memo","level":"1.1.1","depth":2,"path":"setup-os-version-up.md","ref":"setup-os-version-up.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"apt-get-command.md","mtime":"2022-09-19T12:35:29.535Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2022-09-19T12:37:52.550Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -410,10 +453,6 @@
     
         
         <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

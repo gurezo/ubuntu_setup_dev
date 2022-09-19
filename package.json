@@ -4,14 +4,13 @@
   "description": "ubuntu setup develop enviroment",
   "main": "index.js",
   "scripts": {
-    "init": "gitbook init",
-    "start": "gitbook serve",
-    "build": "gitbook build",
-    "publish": "gh-pages -d _book -m 'Auto publish book'",
-    "subtree": "git subtree push --prefix _book origin gh-pages"
+    "init": "honkit init",
+    "start": "npx honkit serve",
+    "build": "honkit build",
+    "publish": "gh-pages -d _book -m 'Auto publish book'"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "gitbook-cli": "^2.3.2"
+    "gh-pages": "^4.0.0",
+    "honkit": "^4.0.0"
   }
 }

@@ -10,7 +10,7 @@
     "publish": "gh-pages -d _book -m 'Auto publish book'"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "honkit": "^4.0.0"
+    "gh-pages": "^5.0.0",
+    "honkit": "^4.0.4"
   }
 }

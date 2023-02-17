@@ -30,96 +30,65 @@
   "files.hotExit": "onExitAndWindowClose",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
-  // "files.trimTrailingWhitespace": true,
+  "files.trimTrailingWhitespace": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.enableBell": true,
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "window.newWindowDimensions": "inherit",
   "window.restoreFullscreen": true,
-  "window.zoomLevel": 0,
-  // "workbench.editor.tabCloseButton": "left",
+  "workbench.editor.tabCloseButton": "left",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   // ===========================
   // language specified settings
   // ===========================
   "[git-commit]": {
-    "editor.rulers": [
-      100,
-    ],
+    "editor.rulers": [100]
   },
   "[html]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.wordWrap": "off",
-    "files.trimTrailingWhitespace": false,
+    "files.trimTrailingWhitespace": false
   },
   "[typescript]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.tabSize": 2,
+    "editor.tabSize": 2
   },
-  // ===================
-  // extensions settings
-  // ===================
-  "typescript.extension.sortImports.maxNamedUmportsInSingleLine": 100,
-  "typescript.extension.sortImports.sortMethd": "path",
-  "typescript.extension.sortImports.pathSortOrder": [
-    "package",
-    "relativeUpLevel",
-    "relativeDownLevel",
-  ],
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  "brancketPairColorizer.consecutivePairColors": [
-    "()",
-    "[]",
-    "{}",
-    [
-      "#c40",
-      "#f69",
-      "#39d",
-      "#3b3",
-      "#c6f",
-      "#f0f"
-    ],
-    "red"
-  ],
-  // "javascript.preferences.quoteStyle": "single",
-  // "typescript.preferences.quoteStyle": "single",
-  // "vsicons.projectDetection.autoReload": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "window.zoomLevel": 2,
 }
 ```

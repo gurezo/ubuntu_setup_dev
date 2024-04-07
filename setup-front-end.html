@@ -6,7 +6,7 @@
         <title>front end dev setup · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="HonKit 4.0.4">
+        <meta name="generator" content="HonKit 4.0.0">
         
         
         
@@ -324,65 +324,96 @@
                                 <h2 id="front-end-dev-setup">front end dev setup</h2>
 <h3 id="ruby-setup">ruby setup</h3>
 <ol>
-<li>rbenv, ruby-buildをインストールします。  <pre><code>$ sudo apt-get -y install rbenv ruby-build
-</code></pre></li>
-<li>rbenvの設定を.profileに書く  <pre><code>$ echo &apos;eval &quot;$(rbenv init -)&quot;&apos; &gt;&gt; ~/.profile
-</code></pre></li>
-<li>設定を反映させる  <pre><code>$ source ~/.profile
-</code></pre></li>
-<li>rubyをインストールします。  <pre><code>$ rbenv install 2.4.1
-</code></pre></li>
-<li>rubyのバージョンの切り替え  <pre><code>$ rbenv global 2.4.1
-</code></pre></li>
-<li><p>rubyのバージョンを確認  </p>
+<li>rbenv, ruby-build をインストールします。</li>
+</ol>
+<pre><code>$ sudo apt-get -y install rbenv ruby-build
+</code></pre><ol>
+<li>rbenv の設定を.profile に書く</li>
+</ol>
+<pre><code>$ echo &apos;eval &quot;$(rbenv init -)&quot;&apos; &gt;&gt; ~/.profile
+</code></pre><ol>
+<li>設定を反映させる</li>
+</ol>
+<pre><code>$ source ~/.profile
+</code></pre><ol>
+<li>ruby をインストールします。</li>
+</ol>
+<pre><code>$ rbenv install 2.4.1
+</code></pre><ol>
+<li>ruby のバージョンの切り替え</li>
+</ol>
+<pre><code>$ rbenv global 2.4.1
+</code></pre><ol>
+<li>ruby のバージョンを確認</li>
+</ol>
 <pre><code>$ ruby -v
 </code></pre><pre><code>ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
 </code></pre><ul>
-<li>上記のように表示されれば、正常に切り替え終了です。</li>
-</ul>
+<li><p>上記のように表示されれば、正常に切り替え終了です。</p>
 </li>
-<li>bundler のインストールします。  <pre><code>$ rbenv exec gem install bundler
-</code></pre></li>
-</ol>
-<h3 id="rbenv-tips">rbenv tips</h3>
+<li><p>bundler のインストールします。</p>
+</li>
+</ul>
+<pre><code>$ rbenv exec gem install bundler
+</code></pre><h3 id="rbenv-tips">rbenv tips</h3>
 <ol>
-<li>バージョン<pre><code>$ rbenv -v
-$ rbenv --version
-</code></pre></li>
-<li>インストール可能なバージョンの一覧<pre><code>$ rbenv install -l
-</code></pre></li>
-<li>インストール<pre><code>$ rbenv install 2.1.5
-</code></pre></li>
-<li>アンインストール<pre><code>$ rbenv uninstall 2.1.5
-</code></pre></li>
+<li>バージョン</li>
 </ol>
-<h3 id="引用">引用</h3>
+<pre><code>$ rbenv -v
+$ rbenv --version
+</code></pre><ol>
+<li>インストール可能なバージョンの一覧</li>
+</ol>
+<pre><code>$ rbenv install -l
+</code></pre><ol>
+<li>インストール</li>
+</ol>
+<pre><code>$ rbenv install 2.1.5
+</code></pre><ol>
+<li>アンインストール</li>
+</ol>
+<pre><code>$ rbenv uninstall 2.1.5
+</code></pre><h3 id="引用">引用</h3>
 <ul>
-<li><a href="http://www.task-notes.com/entry/20141204/1417662000" target="_blank">rbenvのよく使うコマンドまとめ - TASK NOTES</a></li>
+<li><a href="http://www.task-notes.com/entry/20141204/1417662000" target="_blank">rbenv のよく使うコマンドまとめ - TASK NOTES</a></li>
 </ul>
 <hr>
 <h3 id="nodejs">Node.js</h3>
-<ol>
-<li>nodebrew をインストールします。  <pre><code>$ curl -L git.io/nodebrew | perl - setup
-</code></pre></li>
-<li>環境設定ファイルにnodebrew のパスを通す  <pre><code>$ echo &quot;export PATH=$HOME/.nodebrew/current/bin:$PATH&quot; &gt;&gt; ~/.profile
-</code></pre></li>
-<li>設定を反映させる  <pre><code>$ source ~/.profile
-</code></pre></li>
-<li>nodebrewの確認  <pre><code>$ nodebrew --version
-</code></pre></li>
-<li>nodebrewのインストールlist確認  <pre><code>$ nodebrew ls-remote
-</code></pre></li>
-<li>nodebrew から Node.jsをインストールします。  <pre><code>$ nodebrew install-binary v10.15.3
-</code></pre></li>
-<li>Node.jsの使用するバージョンを指定する  <pre><code>$ nodebrew use v10.15.3
-</code></pre></li>
-</ol>
+<ul>
+<li><p>ubuntu をアップデート、アップグレード(省略可)します。</p>
+<pre><code class="lang-sh">$ sudo apt-get -y update
+$ sudo apt-get -y upgrade
+</code></pre>
+</li>
+<li><p>node v20.x を取得します。</p>
+<pre><code class="lang-sh">$ curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+</code></pre>
+</li>
+<li><p>node.js をインストールします。</p>
+<pre><code class="lang-sh">$ sudo apt-get install nodejs -y
+</code></pre>
+</li>
+<li><p>ubuntu の不要パッケージを削除(省略可)、クリーニング(省略可)します。</p>
+<pre><code class="lang-sh">$ sudo apt-get -y autoremove
+$ sudo apt-get -y autoclean
+</code></pre>
+</li>
+<li><p>インストール後の確認をします。</p>
+<pre><code class="lang-sh">$ npm -v
+10.5.0
+$ node -v
+v20.12.1
+$
+</code></pre>
+</li>
+</ul>
 <h3 id="引用">引用</h3>
 <ul>
-<li><a href="https://qiita.com/suisuina/items/c5c4e4b9f55a8615a542" target="_blank">nodebrewでよく使うコマンド</a></li>
+<li><a href="https://qiita.com/suisuina/items/c5c4e4b9f55a8615a542" target="_blank">nodebrew でよく使うコマンド</a></li>
 </ul>
+<pre><code>
 
+</code></pre>
                                 
                                 </section>
                             
@@ -425,7 +456,7 @@ $ rbenv --version
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"front end dev setup","level":"1.1.6","depth":2,"next":{"title":"terminal guake setup","level":"1.1.7","depth":2,"path":"setup-terminal.md","ref":"setup-terminal.md","articles":[]},"previous":{"title":"git セットアップ","level":"1.1.5","depth":2,"path":"setup-git-client.md","ref":"setup-git-client.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-front-end.md","mtime":"2023-02-17T16:27:35.082Z","type":"markdown"},"gitbook":{"version":"4.0.4","time":"2023-02-17T16:31:33.531Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"front end dev setup","level":"1.1.6","depth":2,"next":{"title":"terminal guake setup","level":"1.1.7","depth":2,"path":"setup-terminal.md","ref":"setup-terminal.md","articles":[]},"previous":{"title":"git セットアップ","level":"1.1.5","depth":2,"path":"setup-git-client.md","ref":"setup-git-client.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup-front-end.md","mtime":"2024-04-07T14:44:06.697Z","type":"markdown"},"gitbook":{"version":"4.0.0","time":"2024-04-07T14:44:11.589Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

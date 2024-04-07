@@ -124,7 +124,3 @@ $ rbenv uninstall 2.1.5
 ### 引用
 
 - [Ubuntu 20.04 に Node.js をインストールする方法](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-ja)
-
-```
-
-```
